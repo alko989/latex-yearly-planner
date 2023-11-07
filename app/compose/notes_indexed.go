@@ -17,7 +17,7 @@ func NotesIndexed(cfg config.Config, tpls []string) (page.Modules, error) {
 			Cfg: cfg,
 			Tpl: tpls[0],
 			Body: map[string]interface{}{
-				"Notes":        indexPage,
+				"Notes":     indexPage,
 				"Breadcrumb":   indexPage.Breadcrumb(cfg.Year, idx),
 				"HeadingMOS":   indexPage.HeadingMOS(idx+1, len(index.Pages)),
 				"SideQuarters": year.SideQuarters(0),
@@ -34,7 +34,7 @@ func NotesIndexed(cfg config.Config, tpls []string) (page.Modules, error) {
 				Cfg: cfg,
 				Tpl: tpls[1],
 				Body: map[string]interface{}{
-					"Note":         nt,
+					"Note":      nt,
 					"Breadcrumb":   nt.Breadcrumb(),
 					"HeadingMOS":   nt.HeadingMOS(idxPage),
 					"SideQuarters": year.SideQuarters(0),

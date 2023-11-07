@@ -12,7 +12,7 @@ func Quarterly(cfg config.Config, tpls []string) (page.Modules, error) {
 	year := cal.NewYear(cfg.WeekStart, cfg.Year)
 
 	hRight := header.Items{
-		header.NewTextItem("Notes").RefText("Notes Index"),
+		header.NewTextItem("Projects").RefText("Projects Index"),
 	}
 
 	for _, quarter := range year.Quarters {

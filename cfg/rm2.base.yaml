@@ -1,5 +1,5 @@
 cleartoprightcorner: true
-
+calafterschedule: true
 layout:
   paper:
     width: 15.6cm
@@ -18,8 +18,8 @@ layout:
   numbers:
     quarterlylines: 38
     weeklylines: 11
-    dailybottomhour: 6
-    dailytophour: 23
+    dailybottomhour: 8
+    dailytophour: 20
     dailytodos: 8
     dailynotes: 27
     dailydiarygrateful: 4
